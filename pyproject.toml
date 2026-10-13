@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "multi-factor-time-series-forecasting"
+version = "1.0.0"
+description = "Causal equity forecasting with rolling ARIMA and PyTorch BiLSTM experiments"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+authors = [{name = "Qichen Zhu"}]
+dependencies = [
+  "numpy>=2.0,<3", "pandas>=2.2,<4", "scipy>=1.13,<2",
+  "statsmodels>=0.14,<0.16", "scikit-learn>=1.5,<2",
+  "torch>=2.4,<3", "yfinance>=0.2.54,<2", "matplotlib>=3.9,<4"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.11,<1", "build>=1,<2"]
+
+[project.scripts]
+forecasting = "forecasting.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 110
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]

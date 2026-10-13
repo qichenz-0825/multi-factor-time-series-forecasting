@@ -1,0 +1,33 @@
+{
+  "feature_count": 28,
+  "features": [
+    "log_return_1",
+    "log_return_2",
+    "log_return_3",
+    "log_return_5",
+    "log_return_10",
+    "log_return_20",
+    "close_to_sma_5",
+    "close_to_sma_10",
+    "close_to_sma_20",
+    "close_to_sma_50",
+    "realized_vol_5",
+    "realized_vol_10",
+    "realized_vol_20",
+    "intraday_log_return",
+    "overnight_log_return",
+    "high_low_range",
+    "close_location",
+    "volume_log_change",
+    "volume_to_mean_20",
+    "rsi_14",
+    "macd_normalized",
+    "macd_signal_normalized",
+    "macd_histogram_normalized",
+    "atr_14_normalized",
+    "vix_lag_1",
+    "vix_log_change_1",
+    "vix_log_change_5",
+    "vix_to_mean_20"
+  ]
+}

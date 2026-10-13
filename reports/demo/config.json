@@ -1,0 +1,23 @@
+{
+  "tickers": [
+    "SYNTHETIC"
+  ],
+  "start": "2015-01-02",
+  "end": "2025-04-26",
+  "test_start": "2016-06-01",
+  "models": [
+    "zero",
+    "arima",
+    "bilstm"
+  ],
+  "train_window": 180,
+  "lookback": 20,
+  "horizon": 5,
+  "stride": 5,
+  "epochs": 2,
+  "hidden_size": 8,
+  "seed": 42,
+  "signal_horizon": 5,
+  "cost_bps": 10.0,
+  "threshold": 0.0
+}

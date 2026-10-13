@@ -1,0 +1,59 @@
+{
+  "status": "complete",
+  "completed_at_utc": "2026-10-13T02:12:00.235960+00:00",
+  "mode": "historical",
+  "python": "3.12.0",
+  "dependencies": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "statsmodels": "0.15.0",
+    "scikit-learn": "1.9.1",
+    "torch": "2.14.1",
+    "yfinance": "1.7.0",
+    "matplotlib": "3.11.2"
+  },
+  "datasets": {
+    "NVDA": {
+      "source": "yahoo_finance",
+      "rows": 2594,
+      "first_date": "2015-01-02",
+      "last_date": "2025-04-25",
+      "canonical_csv_sha256": "eadc2c912f285c3782594ae14283f68f902f1d2e46d01b843bb1b9c91a26d0aa",
+      "adjustment": "auto_adjusted_OHLC_raw_volume"
+    },
+    "XOM": {
+      "source": "yahoo_finance",
+      "rows": 2594,
+      "first_date": "2015-01-02",
+      "last_date": "2025-04-25",
+      "canonical_csv_sha256": "c56e560bbec774988fc5d9d582da533d36e7eddc370e22f48898c38b614feb75",
+      "adjustment": "auto_adjusted_OHLC_raw_volume"
+    }
+  },
+  "config": {
+    "tickers": [
+      "NVDA",
+      "XOM"
+    ],
+    "start": "2015-01-02",
+    "end": "2025-04-26",
+    "test_start": "2024-04-23",
+    "models": [
+      "zero",
+      "arima",
+      "bilstm"
+    ],
+    "train_window": 504,
+    "lookback": 30,
+    "horizon": 5,
+    "stride": 5,
+    "epochs": 10,
+    "hidden_size": 32,
+    "seed": 42,
+    "signal_horizon": 5,
+    "cost_bps": 10.0,
+    "threshold": 0.0
+  },
+  "resume_performance_claim_verified": false
+}

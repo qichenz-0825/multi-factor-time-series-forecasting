@@ -1,0 +1,41 @@
+[
+  {
+    "ticker": "SYNTHETIC",
+    "model": "zero",
+    "total_return": 0.0,
+    "annualized_return": 0.0,
+    "sharpe": 0.0,
+    "max_drawdown": 0.0,
+    "turnover": 0.0,
+    "benchmark_total_return": -0.007203722481375685,
+    "benchmark_annualized_return": -0.03578228522160076,
+    "benchmark_sharpe": -0.12792076088712567,
+    "benchmark_max_drawdown": -0.09906391459709374
+  },
+  {
+    "ticker": "SYNTHETIC",
+    "model": "arima",
+    "total_return": -0.009172351336234175,
+    "annualized_return": -0.04538004336162982,
+    "sharpe": -0.1871640661091764,
+    "max_drawdown": -0.0990639145970933,
+    "turnover": 2.0,
+    "benchmark_total_return": -0.007203722481375685,
+    "benchmark_annualized_return": -0.03578228522160076,
+    "benchmark_sharpe": -0.12792076088712567,
+    "benchmark_max_drawdown": -0.09906391459709374
+  },
+  {
+    "ticker": "SYNTHETIC",
+    "model": "bilstm",
+    "total_return": -0.009172351336234175,
+    "annualized_return": -0.04538004336162982,
+    "sharpe": -0.1871640661091764,
+    "max_drawdown": -0.0990639145970933,
+    "turnover": 2.0,
+    "benchmark_total_return": -0.007203722481375685,
+    "benchmark_annualized_return": -0.03578228522160076,
+    "benchmark_sharpe": -0.12792076088712567,
+    "benchmark_max_drawdown": -0.09906391459709374
+  }
+]

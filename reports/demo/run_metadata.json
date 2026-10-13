@@ -1,0 +1,50 @@
+{
+  "status": "complete",
+  "completed_at_utc": "2026-10-13T02:20:53.253371+00:00",
+  "mode": "synthetic_demo",
+  "python": "3.12.0",
+  "dependencies": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "statsmodels": "0.15.0",
+    "scikit-learn": "1.9.1",
+    "torch": "2.14.1",
+    "yfinance": "1.7.0",
+    "matplotlib": "3.11.2"
+  },
+  "datasets": {
+    "SYNTHETIC": {
+      "source": "synthetic",
+      "rows": 420,
+      "first_date": "2015-01-02",
+      "last_date": "2016-08-11",
+      "canonical_csv_sha256": "0caa8baf5509daf0fe9fae74d6ba40c5f562f591bbb85de96e3c8b5a131c59b4",
+      "adjustment": "fictional"
+    }
+  },
+  "config": {
+    "tickers": [
+      "SYNTHETIC"
+    ],
+    "start": "2015-01-02",
+    "end": "2025-04-26",
+    "test_start": "2016-06-01",
+    "models": [
+      "zero",
+      "arima",
+      "bilstm"
+    ],
+    "train_window": 180,
+    "lookback": 20,
+    "horizon": 5,
+    "stride": 5,
+    "epochs": 2,
+    "hidden_size": 8,
+    "seed": 42,
+    "signal_horizon": 5,
+    "cost_bps": 10.0,
+    "threshold": 0.0
+  },
+  "resume_performance_claim_verified": false
+}

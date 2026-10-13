@@ -1,0 +1,80 @@
+[
+  {
+    "ticker": "NVDA",
+    "model": "zero",
+    "total_return": 0.0,
+    "annualized_return": 0.0,
+    "sharpe": 0.0,
+    "max_drawdown": 0.0,
+    "turnover": 0.0,
+    "benchmark_total_return": 0.2731995719506828,
+    "benchmark_annualized_return": 0.2744253401674197,
+    "benchmark_sharpe": 0.7020677624461283,
+    "benchmark_max_drawdown": -0.4284254378637128
+  },
+  {
+    "ticker": "NVDA",
+    "model": "arima",
+    "total_return": 0.270612600440046,
+    "annualized_return": 0.27182557200716984,
+    "sharpe": 0.6988069985716545,
+    "max_drawdown": -0.428425437863713,
+    "turnover": 2.0,
+    "benchmark_total_return": 0.2731995719506828,
+    "benchmark_annualized_return": 0.2744253401674197,
+    "benchmark_sharpe": 0.7020677624461283,
+    "benchmark_max_drawdown": -0.4284254378637128
+  },
+  {
+    "ticker": "NVDA",
+    "model": "bilstm",
+    "total_return": 0.270612600440046,
+    "annualized_return": 0.27182557200716984,
+    "sharpe": 0.6988069985716545,
+    "max_drawdown": -0.428425437863713,
+    "turnover": 2.0,
+    "benchmark_total_return": 0.2731995719506828,
+    "benchmark_annualized_return": 0.2744253401674197,
+    "benchmark_sharpe": 0.7020677624461283,
+    "benchmark_max_drawdown": -0.4284254378637128
+  },
+  {
+    "ticker": "XOM",
+    "model": "zero",
+    "total_return": 0.0,
+    "annualized_return": 0.0,
+    "sharpe": 0.0,
+    "max_drawdown": 0.0,
+    "turnover": 0.0,
+    "benchmark_total_return": -0.07073850581005914,
+    "benchmark_annualized_return": -0.07101008111049623,
+    "benchmark_sharpe": -0.15155218291541725,
+    "benchmark_max_drawdown": -0.19295258866328424
+  },
+  {
+    "ticker": "XOM",
+    "model": "arima",
+    "total_return": -0.18677611184929,
+    "annualized_return": -0.1874456889584184,
+    "sharpe": -0.7238264849440282,
+    "max_drawdown": -0.23063189539008033,
+    "turnover": 4.0,
+    "benchmark_total_return": -0.07073850581005914,
+    "benchmark_annualized_return": -0.07101008111049623,
+    "benchmark_sharpe": -0.15155218291541725,
+    "benchmark_max_drawdown": -0.19295258866328424
+  },
+  {
+    "ticker": "XOM",
+    "model": "bilstm",
+    "total_return": -0.010228408864056071,
+    "annualized_return": -0.010268949545410688,
+    "sharpe": 0.04184151650245437,
+    "max_drawdown": -0.13930237169833004,
+    "turnover": 16.0,
+    "benchmark_total_return": -0.07073850581005914,
+    "benchmark_annualized_return": -0.07101008111049623,
+    "benchmark_sharpe": -0.15155218291541725,
+    "benchmark_max_drawdown": -0.19295258866328424
+  }
+]

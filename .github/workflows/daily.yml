@@ -1,0 +1,28 @@
+name: Daily equity forecasts
+on:
+  schedule:
+    - cron: '30 23 * * 1-5'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daily-forecast
+  cancel-in-progress: false
+jobs:
+  forecast:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install torch==2.14.1 --index-url https://download.pytorch.org/whl/cpu
+      - run: pip install -r requirements.txt && pip install -e .
+      - run: forecasting update --config configs/research.json --output reports/latest
+      - uses: actions/upload-artifact@v4
+        with:
+          name: daily-forecasts
+          path: reports/latest/
+          retention-days: 30
